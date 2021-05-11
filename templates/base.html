@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <title>MUSICAL.lyrics</title>
+      <link  rel="icon" type="img/png" href="{% static 'imagem/icons8-play-64.png' %}"></link>
+  </head>
+  <body> 
+    <!--Inicio Nav-->
+    <nav class="navbar navbar-light bg-light fixed-top">
+      <div class="container">
+        <button class="navbar-toggler" type="button" 
+          data-toggle="modal" data-target="#exampleModal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <span class="navbar-brand mb-0 h1">
+          <a style="text-decoration:none;" href="{% url 'home' %}">
+              <div class="logo">
+                <b class="logo-b1">MUSICAL.</b>
+                <b class="logo-b2">lyrics</b>
+              </div>
+          </a>
+        </span>
+        
+      </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" 
+      tabindex="-1" aria-labelledby="exampleModalLabel" 
+      aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              <div class="logo">
+                <b class="logo-b1">MUSICAL.</b>
+                <b class="logo-b2">lyrics</b>
+              </div>
+            </h5>
+            <button type="button" class="close" 
+              data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a class="nav-link" href="#"> 
+                <a class="nav-link" href="{% url 'home' %}">
+                  <h5>
+                     Home
+                  </h5> 
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="{% url 'view_worship' %}">
+                  <h5>
+                    Adoração
+                  </h5>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="{% url 'view_missions' %}">
+                  <h5>Missões</h5>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="{% url 'view_holy_supper' %}">
+                  <h5>Santa Ceia</h5>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dist"></div>
+    {% block main %} {% endblock %}  
+    <footer class="dist"></footer>
+    <script 
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" 
+      crossorigin="anonymous">
+    </script>
+    <script 
+      type="text/javascript" 
+      src="{% static 'js/main.js' %}">
+    </script>
+  </body>
+</html>

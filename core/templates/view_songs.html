@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load embed_video_tags %}
+{% load static %}
+
+{% block main %} 
+<div class="dist"></div>
+    <img src="{{songs.image.url}}" class="img-fluid" alt="{{ songs.singer }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <br>
+                    <h5 class="font-h5">{{songs.title}}</h5>
+                    <h6 class="font-h6">{{songs.singer}}</h6>
+                <br>  
+                <div class="card-view">
+                    <div>
+                        <div class="">
+                            <div class="collapse" id="contentId">
+                                <div class="">
+                                    <br>
+                                    <p>{{songs.lyrics}}</p>
+                                    <small>Compositores: {{ songs.composers }}</small>
+                                </div>
+                            </div>
+                            <br>
+                        <button class="btn  btn-success btn-lg btn-block" type="button" 
+                            data-toggle="collapse" data-target="#contentId" 
+                            aria-expanded="false"aria-controls="contentId">
+                            Letra da música
+                        </button>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" style="padding-top: 2.5rem;">
+                <div class="embed-responsive embed-responsive-21by9">
+                    <div width="560" height="315" class="embed-responsive-item">
+                        {% video songs.video 'small' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- {{ songs.category }}
+    <br>
+    {{ songs.singer }}
+    <br>
+    {{songs.title}}
+    <br>
+    {{ songs.lyrics }}
+    <br>
+    <br>
+    sons: {{ songs.music }}
+    <br>
+    {{ songs.composers }}
+    <br>
+    {% video songs.video 'small' %}
+    <br>
+    </p> -->
+{% endblock %} 
+    
+    

@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+<!-- {% load embed_video_tags %} -->
+{% block main %} 
+  
+
+<div class="container">
+  <div class="dist"></div>
+  <h3>Músicas</h3>
+    <!-- Inicio Slider -->
+    <div class="wrapper-slider">
+      <br>
+      <div class="arrow-left">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+      </div>
+      <div class="arrow-right">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>   
+      </div>
+        <div class="items">
+          {% for i in obj_songs %} 
+            <a href="{% url 'view_songs' i.ID_Songs %}">
+              <div class="item ">
+                <ul class="card-list">
+                  <li class="card">
+                    <a 
+                      class="card-image" 
+                      href="{% url 'view_songs' i.ID_Songs %}" 
+                      style="background-image: url({{i.image.url}});" 
+                      data-image-full="{{i.image.url}}">
+                        <img src="{{i.image.url}}" alt="{{i.singer}}"/>
+                    </a>
+                    <a class="card-description" 
+                      href="{% url 'view_songs' i.ID_Songs %}" >
+                        <h5 style="white-space: pre-line;"><b>{{i.title}}</b></h5>
+                        <small>{{i.singer}}</small>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </a>  
+          {% endfor %}
+        </div>
+    </div>
+    <!-- Fim Slider --> 
+    <!-- Inicio Tabela -->
+    <h3>Todas</h3>
+    <br>
+    <table class="table">
+      <tbody>
+        {% for i in obj_songs %} 
+          <tr>
+            <th scope="row"> 
+              <a class="button button5" href="{% url 'view_songs' i.ID_Songs %}">
+                <div class="wrapper-list">
+                  <div class="arrow-right">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>   
+                  </div>
+                </div>
+              </a>
+            </th>
+            <td><img src="{{i.image.url}}" alt="{{i.singer}}" width="50px"/></td>
+            <td>{{i.title}}</td>
+            <td>{{i.singer}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <!-- fim table -->
+  </div> 
+  
+{% endblock %}
+    
