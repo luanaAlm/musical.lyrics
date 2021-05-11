@@ -44,20 +44,18 @@
     <!-- Inicio Tabela -->
     <h3>Todas</h3>
     <br>
-    <table class="table">
+    <table class="table table-hover">
       <tbody>
         {% for i in obj_songs %} 
           <tr>
             <th scope="row"> 
               <a class="button button5" href="{% url 'view_songs' i.ID_Songs %}">
-                <div class="wrapper-list">
-                  <div class="arrow-right">
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>   
-                  </div>
-                </div>
+                  <i class="fa fa-play" aria-hidden="true"></i>
               </a>
             </th>
-            <td><img src="{{i.image.url}}" alt="{{i.singer}}" width="50px"/></td>
+            <td>
+              <img src="{{i.image.url}}" alt="{{i.singer}}"/>
+            </td>
             <td>{{i.title}}</td>
             <td>{{i.singer}}</td>
           </tr>
