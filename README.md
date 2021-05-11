@@ -3,5 +3,5 @@
 ### ✨ Musical.lyrics
 
 <h1 align="center">
-    <img alt="PlantManager" title="Podcast" src="https://github.com/luanaAlm/podcast-nlw5/blob/main/public/logo.svg" height="50"  />
+    <img alt="PlantManager" title="Podcast" src="https://github.com/luanaAlm/musical.lyrics/blob/main/static/imagem/logo.png" height="50"  />
 </h1>
