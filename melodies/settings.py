@@ -56,10 +56,10 @@ WSGI_APPLICATION = "melodies.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": config("NAME"),
-        "USER": config("USER"),
-        "PASSWORD": config("PASSWORD"),
-        "HOST": config("HOST"),
+        "NAME": "DEMO_MELODIES",
+        "USER": "postgres",
+        "PASSWORD": "root",
+        "HOST": "localhost",
         "PORT": "5432",
     }
 }
