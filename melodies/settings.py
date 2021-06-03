@@ -9,7 +9,7 @@ SECRET_KEY = "django-insecure-hg@mz6rdfbqyb&--(dhqux(#r0a5&ca2sh2g!c^d9jb8-ea0-9
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["musical-lyrics.herokuapp.com", "127.0.0.1:8000"]
+ALLOWED_HOSTS = ["musical-lyrics.herokuapp.com", "127.0.0.1"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
