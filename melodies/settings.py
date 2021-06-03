@@ -102,3 +102,5 @@ STATICFILES_DIRS = [
 MEDIA_URL = "/media/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+DISABLE_COLLECTSTATIC = 1
