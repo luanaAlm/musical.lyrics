@@ -4,8 +4,13 @@ from .form import SongsForm
 
 
 def home(request):
-    obj_songs = Songs.objects.all()
-    return render(request, "index.html", {"obj_songs": obj_songs})
+    obj_songs = Songs.objects.all().order_by("ID_Songs").reverse()
+    obj_songs_table = Songs.objects.all()
+    return render(
+        request,
+        "index.html",
+        {"obj_songs": obj_songs, "obj_songs_table": obj_songs_table},
+    )
 
 
 def viewSongs(request, ID_Songs):
