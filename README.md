@@ -32,12 +32,12 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [Python](https://www.python.org/)
 
-Este projeto foi desenvolvido por **[ Luana Almeida ](https://github.com/luanaAlm)**
-
 #### Frameworks
 
 - [Django](https://www.djangoproject.com/)
 - [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 
 
-Desenvolvido por **[ Luana Almeida ](https://github.com/luanaAlm)**
+<hr>
+
+Feito por [Luana Almeida](https://github.com/luanaAlm) 
