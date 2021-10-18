@@ -6,7 +6,13 @@
     <img alt="PlantManager" title="Podcast" src="https://github.com/luanaAlm/musical.lyrics/blob/main/static/imagem/logo.png" height="50"  />
 </h1>
 
-## 💻 Projeto
+<p align="center">
+    <a href="#Projeto">Projeto</a> | 
+    <a href="#Tecnologias">Tecnologias</a> | 
+</p>
+
+
+# Projeto
 
  - Site para aprender musicas inseridas atraves da página do administrador.
  -  [musical-lyrics](https://musical-lyrics.herokuapp.com/)
@@ -16,7 +22,7 @@
     <img alt = "Musical.lyrics" title = "Projeto Letras de Música" src = "https://github.com/luanaAlm/musical.lyrics/blob/main/static/imagem/screencapture-127-0-0-1-8000-2021-05-11-19_03_34.png" />
 </h1>
 
-## 🧪 Tecnologias
+# Tecnologias
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
